@@ -1,17 +1,36 @@
 # Number Guessing Game
 
-A simple Python console game where the program picks a random number between 1 and 100 and you try to guess it.
+A Python console game where you try to guess a random number between 1 and 100.  
+Logic is abstracted into a separate module for cleaner code organization.
 
 ---
 
 ## Description
 
-This script demonstrates:
-
+This project demonstrates:  
 - Generating random numbers with the `random` module  
-- Basic game loops and user input  
-- Conditional logic to give feedback (“Too low!”, “Too high!”)  
-- Clean exit once the correct number is guessed  
+- Separating logic into its own function (`check_logic`) in `logic.py`  
+- Game loops and user input  
+- Conditional feedback (“Too low!”, “Too high!”, “You guessed it!”)  
+- Exiting cleanly once the correct number is guessed
 
-It’s Day 3 of my Python roadmap, reinforcing loops, conditionals, and standard library usage. :contentReference[oaicite:0]{index=0}
+---
+
+## Installation
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/138siscog/<repo-name>.git
+   cd <Guessin_Game>
+
+
+2. **(Optional) Create a virtual environment**  
+   python -m venv venv
+   # Windows
+   venv\Scripts\activate
+   # macOS/Linux
+   source venv/bin/activate
+
+3. **Verify Files**  
+   Ensure both number_guess.py and logic.py are in the project root folder
 
